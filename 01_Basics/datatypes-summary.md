@@ -1,5 +1,5 @@
-# 1. Primitive 
-## There are 7 types:
+## 1. Primitive 
+### There are 7 types:
 - String
 - Number 
 - Boolean 
@@ -24,8 +24,8 @@ console.log(id === anotherId); // false
 const bigNumber = 65432123456n // "n" determines BigInt datatype
 ```
 
-# 2. Reference (Non-Primitive)
-## There are 3 types:
+## 2. Reference (Non-Primitive)
+### There are 3 types:
 - Array
 ```
 const heros = ["Ironman", "Spiderman", "Thor"]
@@ -47,3 +47,28 @@ console.log(typeof myFunction);
 ```
 
 https://262.ecma-international.org/5.1/#sec-11.4.3
+
+## Stack (Primitive)
+```
+let myName = zeelbarotdotcom
+
+let anotherName = myName
+anotherName = "Samudra"
+
+console.log(myName);
+console.log(anotherName);
+```
+## Heap (Non-Primitive)
+```
+let userOne = {
+    email: "user.google.com"
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "zeel@google.com"
+
+consoe.log(userOne.email);  // => zeel@google.com
+consoe.log(userTwo.email);  // => zeel@google.com
+```
