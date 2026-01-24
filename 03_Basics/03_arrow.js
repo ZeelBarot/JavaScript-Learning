@@ -34,8 +34,9 @@ const user = {
 // const addTwo = (n1, n2) => {   // If we user paranthesis {} then you have to write retun
 //     return n1 + n2
 // }
-
-const addTwo = (n1, n2) => (n1 + n2) // No need to write return keyword
+// const addTwo = (n1, n2) => n1 + n2
+// const addTwo = (n1, n2) => (n1 + n2) // No need to write return keyword
+const addTwo = (n1, n2) => ({username: "zeel"})
 
 console.log(addTwo(3,4));
 
